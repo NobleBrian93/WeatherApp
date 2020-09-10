@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!<meta name="apple-mobile-web-app-status-bar" content="default">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <meta name="theme-color" content="#fff">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="img/icon.png">
+  <link rel="apple-touch-icon" href="/img/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>WeatherApp</title>
+</head>
+<body>
+          <div class="container">
+          <div class="app__left">
+          <img src="default.jpg" alt="" id="img__loader">
+          <div class="app__header">
+          <form class="search__form">
+          <input type="search" id="search" placeholder="Enter city name">
+          <button type="submit" name="submit" id="submit">Search</button>
+          </form>
+          </div>
+
+          <div class="app__body">
+          <div class="city__details">
+          <h2 class="city__name"></h2>
+          <p class="date"></p>
+          <div class="weather__rep">
+          <h1 class="city__temp"></h1>
+          <div class="weather__img">
+          <img src="" alt="">
+          <p class="weather__desc"></p>
+          </div>
+          </div>
+          </div>
+          
+          <div class="more__details">
+          <div class="wind box">
+          <span class="title">Wind</span>
+          <h3 class="wind__range"></h3>
+          <span class="symbol">km/h</span>
+          </div>
+
+          <div class="feels__like box">
+          <span class="title">Weather</span>
+          <h3 class="feel__range"></h3>
+          <span class="symbol"><img src="" alt="icon" class="image"></span>
+          </div>
+
+          <div class="humidity box">
+          <span class="title">Humidity</span>
+          <h3 class="humidity__range"></h3>
+          <span class="symbol">%</span>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="app__right">
+          <div class="card">
+          <h4 class="card__heading">African city names</h4>
+          <div class="cities"></div>
+          </div>
+          </div>
+          </div>
+          <div class="empty__field"></div>
+          <div class="wrong__city"></div>
+
+          <div class="single-footer-widget">
+          <hr />
+          <p class="footer-text">
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by Brian Ntong
+          </p>
+          </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
